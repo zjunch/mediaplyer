@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".playervideo.VideoActivity">
+    <LinearLayout
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <cn.jzvd.MyJzvdStd
+            android:id="@+id/jz_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_below="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="recylceView\n全屏返回关闭视频"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="intoRecycle"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_below="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragmentListview\n全屏返回继续播放"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="intoFragment"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>
